@@ -8,8 +8,23 @@
 #include <tuple>
 #include <utility>
 #include <type_traits>
+#include <functional>
+#include <regex>
 
+constexpr double types_lib_version = 1.3;
 namespace types {
+
+    using std::regex;
+    using std::smatch;
+    using std::regex_match;
+    using std::regex_search;
+    using std::regex_replace;
+
+    namespace regex_constants {
+        using namespace std::regex_constants;
+    }
+
+    using std::function;
 
     using std::string;
 
